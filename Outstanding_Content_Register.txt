@@ -1,0 +1,39 @@
+Outstanding content register — D3 Satellite Data Labs home page
+Prepared by: Uneza Kashif
+Organization: Qelv LLC
+Date: 16 August 2026
+Build host (infrastructure only; not referenced in site files): advanced-datalytics.digital
+
+How to read this register
+Every placeholder or unsupplied asset is listed with its location in the page and who is expected to supply it.
+Copy that is adapted from hotelcompete.com is marked "Adapted from existing site" and is not outstanding.
+
+Item | Location | Who supplies | Notes
+-----|----------|--------------|------
+Exact wordmark | css/brand.css (--brand-name); header and footer text in index.html | Client | Working name "Satellite Data Labs" applied from domain. Exact mark unconfirmed.
+Logo / favicon artwork | assets/logo-placeholder.svg; --brand-logo in css/brand.css; link rel=icon in index.html | Client | Placeholder SVG in use. Replace file and keep the same path, or update --brand-logo only.
+Final colour palette | css/brand.css (Direction A default; also B and C) | Client selects direction or supplies palette | Default Direction A uses #1B4F72 to align with D4 provisional portal colour.
+Final typeface licence confirmation | Google Fonts links in index.html; --font-display / --font-body in brand.css | Client / Qelv | Fraunces + Source Sans 3 (A), IBM Plex Sans (B), Libre Baskerville + Karla (C). Confirm preferred stack.
+Sales / support phone | Not on page | Client | Existing site shows 800.563.8040 — not reproduced (old company contact). Supply SDL contact if required.
+Sales email | Not on page | Client | Existing site shows sales@hotelcompete.com — not reproduced. Supply SDL address if required.
+Support centre URL | Not on page | Client | Existing SUPPORT CENTER link not carried over until SDL destination exists.
+Hero photography | Not used | Client (optional) | Existing site uses hotel interior photography. New page intentionally has no photo so it does not resemble hotelcompete.com.
+Product screenshot asset | Hero panel is text-only | Client (optional) | Existing Compset Analyzer dashboard image not copied. Optional later.
+"Sign up" destination | Not linked | Client | Existing SIGN UP button not reproduced. Portal client login is the only primary CTA.
+Census product section | #census placeholder (hidden) in index.html | Later phase | Structure reserved; out of scope this deliverable.
+Domain cutover to satellitedatalabs.com | DNS / D5 | Client + Qelv | Build host must not appear in site files. Site uses relative paths only.
+
+Content source map (not outstanding)
+Source on hotelcompete.com | Used on new page as
+---------------------------|--------------------
+Introducing Compset Analyzer Plus / Stay one step ahead... | Hero heading and lead (adapted)
+Booker's Eye View + three other approach points | Approach list (adapted wording, same ideas)
+Get to know our suite of monitoring products | Products section
+CLIENT LOGIN | Client login -> https://portal.hotelcompete.com/
+
+Brand file location (acceptance criterion 2)
+All brand values are consolidated in: css/brand.css
+Referenced from: index.html (wordmark text), css/main.css (colours, type, logo via CSS variables)
+
+Hostname rule (acceptance criterion 3)
+No absolute reference to advanced-datalytics.digital (or any build hostname) appears in site content, navigation, templates, or configuration files in this folder.

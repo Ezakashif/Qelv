@@ -1,0 +1,104 @@
+/**
+ * Satellite Data Labs — brand tokens (single source of truth)
+ * Change wordmark, colours, type, and logo here only.
+ * Do not put hostnames in this file.
+ */
+
+:root {
+  /* Wordmark */
+  --brand-name: "Satellite Data Labs";
+  --brand-name-short: "SDL";
+
+  /* Logo (placeholder until client supplies artwork) */
+  --brand-logo: url("../assets/logo-placeholder.svg");
+
+  /* Direction A (default): split editorial — light ground, deep teal */
+  --color-bg: #f6f3ee;
+  --color-surface: #ffffff;
+  --color-ink: #14212b;
+  --color-muted: #5a6570;
+  --color-accent: #1b4f72;
+  --color-accent-soft: #d6e4ee;
+  --color-line: #d4cdc2;
+  --color-hero-wash: linear-gradient(135deg, #e8eef3 0%, #f6f3ee 48%, #ebe4d8 100%);
+
+  /* Type */
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+  --font-size-hero: clamp(2.4rem, 5vw, 4rem);
+  --font-size-section: clamp(1.6rem, 3vw, 2.2rem);
+  --font-size-body: 1.125rem;
+  --line-body: 1.65;
+  --tracking-display: -0.02em;
+
+  /* Layout */
+  --max-width: 68rem;
+  --space-section: clamp(3.5rem, 8vw, 6.5rem);
+  --radius: 2px;
+}
+
+/* Direction B: dark data console */
+[data-direction="b"] {
+  --color-bg: #0e151c;
+  --color-surface: #162029;
+  --color-ink: #e8eef3;
+  --color-muted: #9aabba;
+  --color-accent: #3d8ebd;
+  --color-accent-soft: #1a3344;
+  --color-line: #2a3a48;
+  --color-hero-wash: linear-gradient(160deg, #0e151c 0%, #152433 55%, #1b4f72 140%);
+  --font-display: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+
+/* Direction C: bold vertical strip — warm paper + ink */
+[data-direction="c"] {
+  --color-bg: #faf8f5;
+  --color-surface: #fffdf9;
+  --color-ink: #1a1a1a;
+  --color-muted: #66625c;
+  --color-accent: #8c3b1e;
+  --color-accent-soft: #f0e2d8;
+  --color-line: #e5ddd2;
+  --color-hero-wash: linear-gradient(90deg, #1b4f72 0%, #1b4f72 38%, #faf8f5 38%);
+  --font-display: "Libre Baskerville", "Times New Roman", serif;
+  --font-body: "Karla", "Segoe UI", sans-serif;
+}
+
+/* index2 — typographic stack / poster */
+html.page-2 {
+  --color-bg: #f3efe6;
+  --color-surface: #faf7f0;
+  --color-ink: #121212;
+  --color-muted: #4a4a46;
+  --color-accent: #0f5c4c;
+  --color-accent-soft: #d5e6e0;
+  --color-line: #cfc7b8;
+  --color-hero-wash: repeating-linear-gradient(
+    -12deg,
+    transparent,
+    transparent 11px,
+    rgba(15, 92, 76, 0.04) 11px,
+    rgba(15, 92, 76, 0.04) 12px
+  );
+  --font-display: "Playfair Display", "Times New Roman", serif;
+  --font-body: "Manrope", "Segoe UI", sans-serif;
+  --font-size-hero: clamp(2.8rem, 7vw, 5.2rem);
+  --tracking-display: -0.03em;
+}
+
+/* index3 — signal / lab strip */
+html.page-3 {
+  --color-bg: #10140f;
+  --color-surface: #171c15;
+  --color-ink: #e7efe3;
+  --color-muted: #9aab94;
+  --color-accent: #c6f26d;
+  --color-accent-soft: #24301c;
+  --color-line: #2c3528;
+  --color-hero-wash: linear-gradient(180deg, #10140f 0%, #152018 100%);
+  --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-body: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-size-hero: clamp(2.2rem, 5.5vw, 3.8rem);
+  --tracking-display: -0.04em;
+}

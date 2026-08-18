@@ -1,0 +1,235 @@
+/* index3 — signal / lab strip (distinct from index and index2) */
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--color-ink);
+  background:
+    radial-gradient(ellipse 80% 50% at 100% -10%, rgba(198, 242, 109, 0.08), transparent 50%),
+    var(--color-bg);
+  padding-bottom: 4.5rem;
+}
+
+a { color: var(--color-accent); text-underline-offset: 0.15em; }
+a:hover { opacity: 0.9; }
+
+.wrap {
+  width: min(100% - 2rem, 64rem);
+  margin-inline: auto;
+}
+
+.chooser {
+  padding: 0.65rem 0;
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.chooser a {
+  color: var(--color-muted);
+  margin-right: 0.75rem;
+  text-decoration: none;
+}
+
+.chooser a:hover { color: var(--color-accent); }
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 0;
+}
+
+.bar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.bar__mark {
+  width: 1.75rem;
+  height: 1.75rem;
+  background: var(--brand-logo) center / contain no-repeat;
+}
+
+.pill {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border: 1px solid var(--color-line);
+  padding: 0.35rem 0.6rem;
+}
+
+/* Full-width statement hero — no side panel, no photo */
+.signal {
+  padding: clamp(3rem, 10vw, 6rem) 0 3rem;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.signal__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.signal h1 {
+  margin: 0 0 1.25rem;
+  max-width: 14ch;
+  font-family: var(--font-display);
+  font-size: var(--font-size-hero);
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: var(--tracking-display);
+}
+
+.signal .lead {
+  margin: 0;
+  max-width: 34rem;
+  color: var(--color-muted);
+  font-size: 1.15rem;
+}
+
+/* Huge index numbers down a single spine */
+.spine {
+  padding: clamp(2.5rem, 6vw, 4rem) 0;
+}
+
+.spine h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.4rem, 3vw, 1.85rem);
+  letter-spacing: -0.03em;
+}
+
+.spine .intro {
+  margin: 0 0 2rem;
+  max-width: 36rem;
+  color: var(--color-muted);
+}
+
+.spine ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.spine li {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--color-line);
+}
+
+@media (min-width: 720px) {
+  .spine li {
+    grid-template-columns: 5.5rem 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+}
+
+.spine .idx {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--color-accent);
+}
+
+.spine h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.spine p {
+  margin: 0;
+  color: var(--color-muted);
+  max-width: 40rem;
+}
+
+.suite {
+  margin: 0 0 3rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-line);
+  background: var(--color-surface);
+}
+
+.suite h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.suite p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.foot {
+  padding: 0 0 2rem;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+/* Sticky login dock — always visible CTA */
+.dock {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--color-line);
+}
+
+.dock__inner {
+  width: min(100% - 2rem, 64rem);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+
+.dock p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.dock a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.7rem 1.15rem;
+  background: var(--color-accent);
+  color: #10140f;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.dock a:hover { opacity: 0.92; color: #10140f; }
