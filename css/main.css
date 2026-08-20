@@ -205,11 +205,19 @@ a:hover {
 }
 
 .hero__lead {
-  margin: 0 0 1.75rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
   max-width: 36rem;
   color: var(--color-muted);
-  font-size: 1.15rem;
+  font-size: 1.02rem;
 }
+
+ /* .hero__lead {
+      font-size: 1.02rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      color: var(--color-muted);
+    }  */
 
 
 
@@ -275,6 +283,7 @@ a:hover {
 
   [data-direction="c"] .hero__lead {
     opacity: 0.88;
+    max-width:24rem;
   }
 
   [data-direction="c"] .btn--ghost {
