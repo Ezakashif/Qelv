@@ -211,6 +211,8 @@ a:hover {
   font-size: 1.15rem;
 }
 
+
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -233,6 +235,8 @@ a:hover {
 
 .hero__panel p {
   margin: 0;
+  max-width: 24rem;
+  padding-right: 2rem;
   color: var(--color-muted);
   font-size: 0.98rem;
 }
@@ -263,6 +267,12 @@ a:hover {
     color: #f6f3ee;
   }
 
+  [data-direction="c"] .hero h1 {
+    max-width: 8.5ch;
+    font-size: clamp(2.3rem, 4vw, 4.2rem);
+    line-height: 0.96;
+  }
+
   [data-direction="c"] .hero__lead {
     opacity: 0.88;
   }
@@ -275,7 +285,7 @@ a:hover {
 
 @media (max-width: 899px) {
   [data-direction="c"] {
-    --color-hero-wash: linear-gradient(180deg, #1b4f72 0%, #1b4f72 42%, #faf8f5 42%);
+    --color-hero-wash: linear-gradient(180deg, #2d6d92 0%, #2d6d92 42%, #faf8f5 42%);
   }
 
   [data-direction="c"] .hero__copy {
