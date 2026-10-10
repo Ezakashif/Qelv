@@ -4,26 +4,30 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Satellite Data Labs</title>
+  <title>Satellite Data Labs — poster direction</title>
   <meta name="description" content="Market monitoring and competitive rate insight for hospitality teams.">
+  <meta name="theme-color" content="#0f5c4c">
   <!-- Brand tokens: css/brand.css (html.page-2). Do not put build hostnames in this file. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/brand.css">
+  <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/main2.css">
-  <link rel="icon" href="assets/logo-placeholder.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <div class="wrap">
     <p class="chooser">
-      Compare directions:
-      <a href="index.html">index</a>
-      <a href="index2.html">index2</a>
-      <a href="index3.html">index3</a>
+      <span class="chooser__label">Review build — compare pages:</span>
+      <a href="index.html">Editorial</a>
+      <a href="index2.html" aria-current="page">Poster</a>
+      <a href="index3.html">Signal</a>
     </p>
     <header class="top">
-      <a class="top__brand" href="/">Satellite Data Labs</a>
+      <a class="top__brand" href="index.html">Satellite Data Labs</a>
       <div class="top__actions">
         <a href="#approach">Approach</a>
         <a class="btn" href="https://portal.hotelcompete.com/">Client login</a>
@@ -31,7 +35,7 @@
     </header>
   </div>
 
-  <main>
+  <main id="main">
     <section class="poster" aria-labelledby="hero-heading">
       <div class="wrap poster__grid">
         <p class="poster__wordmark" aria-hidden="true">
@@ -109,11 +113,17 @@
       </div>
     </section>
 
-    <div id="census" hidden aria-hidden="true"></div>
+    <section class="wrap planned" id="census" aria-labelledby="census-heading">
+      <h2 id="census-heading">Census module</h2>
+      <p>
+        Supply-side market census — property counts, room inventory and new openings inside your
+        catchment. Reserved for a later phase and not yet scheduled.
+      </p>
+    </section>
   </main>
 
   <footer class="wrap foot">
-    <p>Satellite Data Labs — contact details pending (see outstanding-content register).</p>
+    <p>Satellite Data Labs — contact details pending.</p>
     <p><a href="https://portal.hotelcompete.com/">Client login</a></p>
   </footer>
 </body>

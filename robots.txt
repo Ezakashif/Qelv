@@ -1,2 +1,7 @@
+# Satellite Data Labs — review build.
+# This deliverable is not intended for public indexing until the client signs off
+# a visual direction and the domain cutover completes. Replace this file with an
+# allow rule (and remove the per-page noindex tags) at go-live.
+
 User-agent: *
 Disallow: /

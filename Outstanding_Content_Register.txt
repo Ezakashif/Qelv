@@ -11,7 +11,7 @@ Copy that is adapted from hotelcompete.com is marked "Adapted from existing site
 Item | Location | Who supplies | Notes
 -----|----------|--------------|------
 Exact wordmark | css/brand.css (--brand-name); header and footer text in index.html | Client | Working name "Satellite Data Labs" applied from domain. Exact mark unconfirmed.
-Logo / favicon artwork | assets/logo-placeholder.svg; --brand-logo in css/brand.css; link rel=icon in index.html | Client | Placeholder SVG in use. Replace file and keep the same path, or update --brand-logo only.
+Logo / favicon artwork | assets/logo.svg, favicon.svg, apple-touch-icon.svg, og-image.svg; --brand-logo in css/brand.css | Client | Placeholder SVGs in use. Replace files and keep the same paths. PNG fallbacks (180px touch icon, 1200x630 OG) recommended for older platforms/social scrapers.
 Final colour palette | css/brand.css (Direction A default; also B and C) | Client selects direction or supplies palette | Default Direction A uses #1B4F72 to align with D4 provisional portal colour.
 Final typeface licence confirmation | Google Fonts links in index.html; --font-display / --font-body in brand.css | Client / Qelv | Fraunces + Source Sans 3 (A), IBM Plex Sans (B), Libre Baskerville + Karla (C). Confirm preferred stack.
 Sales / support phone | Not on page | Client | Existing site shows 800.563.8040 — not reproduced (old company contact). Supply SDL contact if required.
@@ -20,7 +20,8 @@ Support centre URL | Not on page | Client | Existing SUPPORT CENTER link not car
 Hero photography | Not used | Client (optional) | Existing site uses hotel interior photography. New page intentionally has no photo so it does not resemble hotelcompete.com.
 Product screenshot asset | Hero panel is text-only | Client (optional) | Existing Compset Analyzer dashboard image not copied. Optional later.
 "Sign up" destination | Not linked | Client | Existing SIGN UP button not reproduced. Portal client login is the only primary CTA.
-Census product section | #census placeholder (hidden) in index.html | Later phase | Structure reserved; out of scope this deliverable.
+Census product section | #census "Planned" card in index.html; "Census module (planned)" section in index2/index3 | Later phase | Now visible and labelled as planned (was a hidden empty div). Content out of scope this deliverable.
+Demo figures | Interactive compset demo in index.html hero | Client (optional) | Illustrative, deterministic sample numbers — clearly labelled. Replace with real anonymised data if desired.
 Domain cutover to satellitedatalabs.com | DNS / D5 | Client + Qelv | Build host must not appear in site files. Site uses relative paths only.
 
 Content source map (not outstanding)

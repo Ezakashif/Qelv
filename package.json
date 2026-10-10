@@ -1,9 +1,33 @@
-
 {
+  "name": "satellite-data-labs-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Satellite Data Labs marketing home page — static, dependency-free front end.",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "start": "npx serve . -l $PORT"
+    "start": "serve .",
+    "dev": "serve . -l 3000",
+    "lint:css": "stylelint \"css/**/*.css\"",
+    "lint:js": "eslint js scripts eslint.config.cjs",
+    "lint:html": "html-validate index.html index2.html index3.html 404.html",
+    "lint": "npm run lint:css && npm run lint:js && npm run lint:html",
+    "check": "node scripts/check-site.js",
+    "build": "node scripts/build.js",
+    "test": "npm run lint && npm run check"
   },
   "dependencies": {
     "serve": "^14.2.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "html-validate": "^8.24.2",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1"
   }
 }

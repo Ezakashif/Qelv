@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="Satellite Data Labs">
+  <title>Satellite Data Labs</title>
+  <rect width="180" height="180" fill="#1b4f72"/>
+  <circle cx="90" cy="90" r="42" fill="none" stroke="#f6f3ee" stroke-width="10"/>
+  <circle cx="90" cy="90" r="14" fill="#f6f3ee"/>
+  <path d="M90 20v26M90 134v26M20 90h26M134 90h26" stroke="#f6f3ee" stroke-width="10" stroke-linecap="round"/>
+</svg>

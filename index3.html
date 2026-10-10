@@ -4,26 +4,30 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Satellite Data Labs</title>
+  <title>Satellite Data Labs — signal direction</title>
   <meta name="description" content="Market monitoring and competitive rate insight for hospitality teams.">
+  <meta name="theme-color" content="#10140f">
   <!-- Brand tokens: css/brand.css (html.page-3). Do not put build hostnames in this file. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/brand.css">
+  <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/main3.css">
-  <link rel="icon" href="assets/logo-placeholder.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <div class="wrap">
     <p class="chooser">
-      Compare directions:
-      <a href="index.html">index</a>
-      <a href="index2.html">index2</a>
-      <a href="index3.html">index3</a>
+      <span class="chooser__label">Review build — compare pages:</span>
+      <a href="index.html">Editorial</a>
+      <a href="index2.html">Poster</a>
+      <a href="index3.html" aria-current="page">Signal</a>
     </p>
     <header class="bar">
-      <a class="bar__brand" href="/">
+      <a class="bar__brand" href="index.html">
         <span class="bar__mark" aria-hidden="true"></span>
         Satellite Data Labs
       </a>
@@ -31,7 +35,7 @@
     </header>
   </div>
 
-  <main>
+  <main id="main">
     <section class="signal" aria-labelledby="hero-heading">
       <div class="wrap">
         <div class="signal__meta">
@@ -108,18 +112,26 @@
       </div>
     </section>
 
-    <div id="census" hidden aria-hidden="true"></div>
+    <section class="wrap" id="census" aria-labelledby="census-heading">
+      <div class="suite suite--planned">
+        <h2 id="census-heading">Census module <span class="pill">Planned</span></h2>
+        <p>
+          Supply-side market census — property counts, room inventory and new openings inside your
+          catchment. Reserved for a later phase and not yet scheduled.
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="wrap foot">
-    <p>Satellite Data Labs — contact details pending (see outstanding-content register).</p>
+    <p>Satellite Data Labs — contact details pending.</p>
   </footer>
 
-  <div class="dock" role="region" aria-label="Client login">
+  <aside class="dock" aria-label="Client login">
     <div class="dock__inner">
       <p>Existing clients — open the portal over HTTPS</p>
       <a href="https://portal.hotelcompete.com/">Client login</a>
     </div>
-  </div>
+  </aside>
 </body>
 </html>

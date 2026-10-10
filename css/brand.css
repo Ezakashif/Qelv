@@ -1,66 +1,114 @@
 /**
  * Satellite Data Labs — brand tokens (single source of truth)
- * Change wordmark, colours, type, and logo here only.
+ * Change wordmark, colours, type, logo, spacing and motion here only.
  * Do not put hostnames in this file.
  */
 
 :root {
-  /* Wordmark */
+  /* ---- Wordmark ---- */
   --brand-name: "Satellite Data Labs";
   --brand-name-short: "SDL";
 
-  /* Logo (placeholder until client supplies artwork) */
-  --brand-logo: url("../assets/logo-placeholder.svg");
+  /* ---- Logo (placeholder until client supplies artwork) ---- */
+  --brand-logo: url("../assets/logo.svg");
 
-  /* Direction A (default): split editorial — light ground, deep teal */
+  /* ---- Direction A (default): split editorial — light ground, deep teal ---- */
   --color-bg: #f6f3ee;
-  --color-surface: #ffffff;
+  --color-bg-alt: #efeae1;
+  --color-surface: #fff;
+  --color-surface-2: #fbf9f6;
   --color-ink: #14212b;
-  --color-muted: #5a6570;
+  --color-muted: #55606b;
   --color-accent: #1b4f72;
+  --color-accent-strong: #123a56;
   --color-accent-soft: #d6e4ee;
+  --color-accent-contrast: #fff;
   --color-line: #d4cdc2;
+  --color-line-strong: #b9b0a2;
+  --color-positive: #1f6b4a;
+  --color-warning: #8a5a12;
   --color-hero-wash: linear-gradient(135deg, #e8eef3 0%, #f6f3ee 48%, #ebe4d8 100%);
+  --color-chart-grid: rgba(20, 33, 43, 0.1);
 
-  /* Type */
+  /* ---- Type ---- */
   --font-display: "Fraunces", "Times New Roman", serif;
   --font-body: "Source Sans 3", "Segoe UI", sans-serif;
-  --font-size-hero: clamp(2.4rem, 5vw, 4rem);
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", "Consolas", monospace;
+  --font-size-hero: clamp(2.3rem, 5vw, 3.85rem);
   --font-size-section: clamp(1.6rem, 3vw, 2.2rem);
-  --font-size-body: 1.125rem;
+  --font-size-body: 1.0625rem;
   --line-body: 1.65;
   --tracking-display: -0.02em;
 
-  /* Layout */
-  --max-width: 68rem;
-  --space-section: clamp(3.5rem, 8vw, 6.5rem);
-  --radius: 2px;
+  /* ---- Layout ---- */
+  --max-width: 72rem;
+  --max-width-prose: 38rem;
+  --space-section: clamp(3.25rem, 7vw, 5.75rem);
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+  --radius: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  /* ---- Elevation ---- */
+  --shadow-sm: 0 1px 2px rgba(20, 33, 43, 0.06);
+  --shadow-md: 0 6px 18px -8px rgba(20, 33, 43, 0.28);
+  --shadow-lg: 0 24px 48px -28px rgba(20, 33, 43, 0.45);
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-fast: 140ms;
+  --dur: 240ms;
+  --dur-slow: 520ms;
+
+  /* ---- Focus ---- */
+  --focus-ring: 3px;
+  --focus-color: var(--color-accent);
 }
 
 /* Direction B: dark data console */
 [data-direction="b"] {
   --color-bg: #0e151c;
+  --color-bg-alt: #121b24;
   --color-surface: #162029;
-  --color-ink: #e8eef3;
-  --color-muted: #9aabba;
-  --color-accent: #3d8ebd;
+  --color-surface-2: #1b2732;
+  --color-ink: #eaf1f6;
+  --color-muted: #a9bac8;
+  --color-accent: #6bb6e2;
+  --color-accent-strong: #8ccbf0;
   --color-accent-soft: #1a3344;
+  --color-accent-contrast: #08111a;
   --color-line: #2a3a48;
+  --color-line-strong: #3d5163;
+  --color-positive: #62c79a;
+  --color-warning: #e0b063;
   --color-hero-wash: linear-gradient(160deg, #0e151c 0%, #152433 55%, #1b4f72 140%);
+  --color-chart-grid: rgba(234, 241, 246, 0.12);
   --font-display: "IBM Plex Sans", "Segoe UI", sans-serif;
   --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --shadow-md: 0 6px 18px -8px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 24px 48px -28px rgba(0, 0, 0, 0.9);
+  color-scheme: dark;
 }
 
 /* Direction C: bold vertical strip — warm paper + ink */
 [data-direction="c"] {
   --color-bg: #faf8f5;
+  --color-bg-alt: #f3ece5;
   --color-surface: #fffdf9;
+  --color-surface-2: #f7f1ea;
   --color-ink: #1a1a1a;
-  --color-muted: #66625c;
+  --color-muted: #5d584f;
   --color-accent: #8c3b1e;
+  --color-accent-strong: #6f2d15;
   --color-accent-soft: #f0e2d8;
-  --color-line: #e5ddd2;
-  --color-hero-wash: linear-gradient(90deg, #1b4f72 0%, #1b4f72 38%, #faf8f5 38%);
+  --color-accent-contrast: #fffdf9;
+  --color-line: #e0d7ca;
+  --color-line-strong: #c4b6a3;
+  --color-positive: #4a6b1f;
+  --color-warning: #99631a;
+  --color-hero-wash: linear-gradient(135deg, #f3e7dd 0%, #faf8f5 55%, #efe3d6 100%);
+  --color-chart-grid: rgba(26, 26, 26, 0.1);
   --font-display: "Libre Baskerville", "Times New Roman", serif;
   --font-body: "Karla", "Segoe UI", sans-serif;
 }
@@ -68,12 +116,17 @@
 /* index2 — typographic stack / poster */
 html.page-2 {
   --color-bg: #f3efe6;
+  --color-bg-alt: #ebe5d8;
   --color-surface: #faf7f0;
+  --color-surface-2: #f5f0e6;
   --color-ink: #121212;
   --color-muted: #4a4a46;
   --color-accent: #0f5c4c;
+  --color-accent-strong: #0a4436;
   --color-accent-soft: #d5e6e0;
+  --color-accent-contrast: #f3efe6;
   --color-line: #cfc7b8;
+  --color-line-strong: #b3a894;
   --color-hero-wash: repeating-linear-gradient(
     -12deg,
     transparent,
@@ -83,22 +136,36 @@ html.page-2 {
   );
   --font-display: "Playfair Display", "Times New Roman", serif;
   --font-body: "Manrope", "Segoe UI", sans-serif;
-  --font-size-hero: clamp(2.8rem, 7vw, 5.2rem);
+  --font-size-hero: clamp(2.6rem, 6.5vw, 4.8rem);
   --tracking-display: -0.03em;
+  --max-width: 72rem;
+  --gutter: 1rem;
+  --radius: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
 }
 
 /* index3 — signal / lab strip */
 html.page-3 {
   --color-bg: #10140f;
+  --color-bg-alt: #141a12;
   --color-surface: #171c15;
+  --color-surface-2: #1d2419;
   --color-ink: #e7efe3;
-  --color-muted: #9aab94;
+  --color-muted: #a3b49c;
   --color-accent: #c6f26d;
+  --color-accent-strong: #d8ff8d;
   --color-accent-soft: #24301c;
+  --color-accent-contrast: #10140f;
   --color-line: #2c3528;
+  --color-line-strong: #46543f;
   --color-hero-wash: linear-gradient(180deg, #10140f 0%, #152018 100%);
+  --color-chart-grid: rgba(231, 239, 227, 0.12);
   --font-display: "Space Grotesk", "Segoe UI", sans-serif;
   --font-body: "Space Grotesk", "Segoe UI", sans-serif;
   --font-size-hero: clamp(2.2rem, 5.5vw, 3.8rem);
   --tracking-display: -0.04em;
+  --max-width: 64rem;
+  --gutter: 1rem;
+  color-scheme: dark;
 }

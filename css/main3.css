@@ -1,50 +1,14 @@
 /* index3 — signal / lab strip (distinct from index and index2) */
-
-*,
-*::before,
-*::after { box-sizing: border-box; }
-
-html { scroll-behavior: smooth; }
+/* Reset, base typography, .wrap and .chooser come from css/base.css. */
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: var(--font-body);
   font-size: 1.05rem;
   line-height: 1.55;
-  color: var(--color-ink);
   background:
     radial-gradient(ellipse 80% 50% at 100% -10%, rgba(198, 242, 109, 0.08), transparent 50%),
     var(--color-bg);
   padding-bottom: 4.5rem;
 }
-
-a { color: var(--color-accent); text-underline-offset: 0.15em; }
-a:hover { opacity: 0.9; }
-
-.wrap {
-  width: min(100% - 2rem, 64rem);
-  margin-inline: auto;
-}
-
-.signal .wrap {
-  width: min(100% - 2rem, 78rem);
-}
-
-.chooser {
-  padding: 0.65rem 0;
-  font-size: 0.78rem;
-  color: var(--color-muted);
-  border-bottom: 1px solid var(--color-line);
-}
-
-.chooser a {
-  color: var(--color-muted);
-  margin-right: 0.75rem;
-  text-decoration: none;
-}
-
-.chooser a:hover { color: var(--color-accent); }
 
 .bar {
   display: flex;
@@ -86,6 +50,7 @@ a:hover { opacity: 0.9; }
 }
 
 .signal .wrap {
+  width: min(100% - 2rem, 78rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,6 +163,18 @@ a:hover { opacity: 0.9; }
   color: var(--color-muted);
 }
 
+.suite--planned {
+  border-style: dashed;
+  background: transparent;
+}
+
+.suite--planned h2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+
 .foot {
   padding: 0 0 2rem;
   color: var(--color-muted);
@@ -244,4 +221,7 @@ a:hover { opacity: 0.9; }
   letter-spacing: -0.02em;
 }
 
-.dock a:hover { opacity: 0.92; color: #10140f; }
+.dock a:hover {
+  opacity: 0.92;
+  color: var(--color-accent-contrast);
+}
